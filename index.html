@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandemic Simulator - Experience Managing a Global Health Crisis</title>
+    <meta name="description" content="Play Pandemic Simulator online for free. Control the spread of a virus and save humanity in this strategic simulation game.">
+    <meta name="keywords" content="Pandemic Simulator, virus simulation game, disease control game, online pandemic game">
+    <link rel="canonical" href="https://pandemicsimulator.online">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Pandemic Simulator - Strategic Virus Management Game">
+    <meta property="og:description" content="Take control of global health policies to combat a deadly pandemic in this realistic simulation game.">
+    <meta property="og:url" content="https://pandemicsimulator.online">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            blue: '#0071e3',
+                            darkblue: '#0077ED',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .container-custom {
+            max-width: 72rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .container-custom {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container-custom {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        
+        .btn-primary {
+            background-color: #0071e3;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            transition-property: background-color;
+            transition-duration: 300ms;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0077ED;
+        }
+        
+        .game-container {
+            width: 100%;
+            max-width: 56rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            height: 600px;
+        }
+        
+        @media (max-width: 768px) {
+            .game-container {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray text-apple-black">
+    <header class="bg-white shadow-sm py-4">
+        <div class="container-custom">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-apple-blue">Pandemic Simulator</a>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#play" class="hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
+                        <li><a href="#about" class="hover:text-apple-blue transition-colors duration-300">About</a></li>
+                        <li><a href="#instructions" class="hover:text-apple-blue transition-colors duration-300">How to Play</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-apple-blue" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <ul class="space-y-4">
+                    <li><a href="#play" class="block hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
+                    <li><a href="#about" class="block hover:text-apple-blue transition-colors duration-300">About</a></li>
+                    <li><a href="#instructions" class="block hover:text-apple-blue transition-colors duration-300">How to Play</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-12 md:py-20 bg-gradient-to-b from-white to-apple-gray">
+            <div class="container-custom">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Pandemic Simulator</h1>
+                    <p class="text-xl md:text-2xl text-apple-darkgray mb-8 max-w-3xl mx-auto">Take control of global health policies and prevent a pandemic from spreading across the world.</p>
+                    <a href="#play" class="btn-primary">Play Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="play" class="py-12 bg-white">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">Play Pandemic Simulator</h2>
+                <div class="game-container">
+                    <iframe id="game-iframe" 
+                            src="https://html5.gamedistribution.com/f2a015a45b6443358238a54f8f4a557f/"
+                            frameborder="0" 
+                            scrolling="no" 
+                            width="100%" 
+                            height="100%" 
+                            allow="fullscreen" 
+                            title="Pandemic Simulator Game">
+                    </iframe>
+                </div>
+                <div class="text-center mt-6">
+                    <p class="text-sm text-apple-darkgray">游戏加载问题？ <a href="#instructions" class="text-apple-blue">查看我们的说明</a> 或 <button id="toggle-source-btn" class="text-apple-blue hover:underline">尝试备用游戏源</button></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-apple-gray">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8">About Pandemic Simulator</h2>
+                <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                    <p class="mb-4">Pandemic Simulator is a strategic simulation game that puts you in charge of managing a global health crisis. As disease outbreaks threaten to spread across the world, you must make critical decisions about healthcare resources, research priorities, and containment measures.</p>
+                    
+                    <p class="mb-4">In this realistic simulation, you'll experience the challenges faced by global health authorities during a pandemic. Every decision matters as you race against time to develop vaccines, implement quarantines, and prevent the collapse of healthcare systems worldwide.</p>
+                    
+                    <h3 class="text-xl font-semibold mt-6 mb-3">Key Features:</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li>Realistic pandemic spread simulation based on epidemiological models</li>
+                        <li>Multiple difficulty levels and scenarios to test your strategy</li>
+                        <li>Resource management across different regions and countries</li>
+                        <li>Real-time feedback on the effectiveness of your containment policies</li>
+                        <li>Educational insights into how diseases spread and how public health measures work</li>
+                    </ul>
+                    
+                    <p>Pandemic Simulator offers both an engaging gaming experience and valuable insights into epidemiology, making it perfect for anyone interested in public health, strategy games, or crisis management simulations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section id="instructions" class="py-12 bg-white">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8">How to Play</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4">Basic Controls</h3>
+                        <ul class="space-y-3">
+                            <li><span class="font-medium">Start Game:</span> Click the play button to begin the simulation</li>
+                            <li><span class="font-medium">Resource Allocation:</span> Drag and drop resources to different regions</li>
+                            <li><span class="font-medium">Policy Implementation:</span> Click on policy options in the control panel</li>
+                            <li><span class="font-medium">Game Speed:</span> Adjust simulation speed using the time controls</li>
+                            <li><span class="font-medium">Statistics:</span> View detailed data by clicking on the charts icon</li>
+                        </ul>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h2 class="text-xl font-semibold mb-4">Strategy Tips</h2>
+                        <ul class="space-y-3">
+                            <li><span class="font-medium">Early Detection:</span> Invest in monitoring systems to detect outbreaks early</li>
+                            <li><span class="font-medium">Balanced Approach:</span> Consider economic impacts alongside health measures</li>
+                            <li><span class="font-medium">Research Priority:</span> Focus on vaccine development for long-term solutions</li>
+                            <li><span class="font-medium">Border Control:</span> Implement travel restrictions to slow disease spread</li>
+                            <li><span class="font-medium">Public Communications:</span> Maintain public trust through transparent messaging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-black text-white py-8">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Pandemic Simulator</h2>
+                    <p class="text-sm text-gray-400">A realistic pandemic management simulation game that challenges your strategic thinking and crisis response skills.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#play" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#instructions" class="text-gray-400 hover:text-white transition-colors duration-300">Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Pandemic Simulator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu after clicking a link
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // 移除会导致跨域错误的检测代码
+        const toggleSourceBtn = document.getElementById('toggle-source-btn');
+        
+        // 如果按钮存在，则移除它，因为我们不使用备用源
+        if (toggleSourceBtn) {
+            toggleSourceBtn.parentNode.removeChild(toggleSourceBtn);
+        }
+        
+        // 更简单的错误处理方法
+        window.addEventListener('error', function(e) {
+            // 只捕获与iframe相关的错误
+            if (e.target.tagName === 'IFRAME') {
+                console.log('iframe可能加载失败，但不影响网站其他功能');
+                // 这里可以添加友好的错误提示，但不会切换到其他游戏源
+            }
+        }, true);
+    </script>
+</body>
+</html> 
