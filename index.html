@@ -156,19 +156,22 @@
         <section id="play" class="py-12 bg-white">
             <div class="container-custom">
                 <h2 class="text-3xl font-bold mb-8 text-center">Play Pandemic Simulator</h2>
-                <div class="game-container">
-                    <iframe id="game-iframe" 
-                            src="https://www.silvergames.com/en/pandemic-simulator/iframe"
-                            frameborder="0" 
-                            scrolling="no" 
-                            width="100%" 
-                            height="100%" 
-                            allow="fullscreen" 
-                            title="Pandemic Simulator Game">
+                
+                <!-- GameDistribution推荐的嵌入方式 -->
+                <div class="game-container" style="position: relative; overflow: hidden;">
+                    <iframe
+                        src="https://html5.gamedistribution.com/f2a015a45b6443358238a54f8f4a557f/?gd_sdk_referrer_url=https://pandemicsimulator.online/"
+                        width="100%"
+                        height="100%"
+                        scrolling="none"
+                        frameborder="0"
+                        allow="fullscreen"
+                        title="Pandemic Simulator Game">
                     </iframe>
                 </div>
+                
                 <div class="text-center mt-6">
-                    <p class="text-sm text-apple-darkgray">游戏加载问题？ <a href="#instructions" class="text-apple-blue">查看我们的说明</a> 或 <button id="toggle-source-btn" class="text-apple-blue hover:underline">尝试备用游戏源</button></p>
+                    <p class="text-sm text-apple-darkgray">游戏加载问题？ <a href="#instructions" class="text-apple-blue">查看我们的说明</a> 或 <a href="https://gamedistribution.com/games/pandemic-simulator/" target="_blank" class="text-apple-blue hover:underline">访问官方游戏页面</a></p>
                 </div>
             </div>
         </section>
