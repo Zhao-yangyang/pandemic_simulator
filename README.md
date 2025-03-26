@@ -61,4 +61,4 @@
 
 ---
 
-© 2023 Pandemic Simulator. 保留所有权利。 
+© 2025 Pandemic Simulator. 保留所有权利。 
