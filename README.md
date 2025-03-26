@@ -1,6 +1,6 @@
 # Pandemic Simulator 网站
 
-这是为 Pandemic Simulator 在线游戏设计的响应式网站。该网站使用现代化的HTML5、Tailwind CSS和原生JavaScript开发，确保在PC和移动设备上都能获得良好的用户体验。
+这是为 [Pandemic Simulator](https://www.pandemicsimulator.online/) 在线游戏设计的响应式网站。该网站使用现代化的HTML5、Tailwind CSS和原生JavaScript开发，确保在PC和移动设备上都能获得良好的用户体验。
 
 ## 网站特点
 
