@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense Meta Tag -->
+    <meta name="google-adsense-account" content="ca-pub-8591816850976205">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVXERHFJ5B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JVXERHFJ5B');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8591816850976205"
+     crossorigin="anonymous"></script>
+    
+    <title>Pandemic Prevention Guide - Understanding Disease Control & Protection</title>
+    <meta name="description" content="Comprehensive guide to pandemic prevention and control. Learn about virus transmission, vaccine principles, public health measures, and personal protection strategies.">
+    <meta name="keywords" content="pandemic prevention, disease control, virus transmission, vaccine knowledge, public health, protection measures, epidemiology">
+    <link rel="canonical" href="https://pandemicsimulator.online/pandemic-guide.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            blue: '#0071e3',
+                            darkblue: '#0077ED',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .container-custom {
+            max-width: 72rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .container-custom {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container-custom {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray text-apple-black">
+    <header class="bg-white shadow-sm py-4">
+        <div class="container-custom">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-apple-blue">Pandemic Simulator</a>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:text-apple-blue transition-colors duration-300">Home</a></li>
+                        <li><a href="strategy.html" class="hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
+                        <li><a href="pandemic-guide.html" class="text-apple-blue font-semibold">Pandemic Guide</a></li>
+                        <li><a href="about-us.html" class="hover:text-apple-blue transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-apple-blue" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-12 md:py-20 bg-gradient-to-b from-white to-apple-gray">
+            <div class="container-custom">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Pandemic Prevention Guide</h1>
+                    <p class="text-xl md:text-2xl text-apple-darkgray mb-8 max-w-3xl mx-auto">Scientific understanding of pandemics and rational response strategies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="py-12 bg-white">
+            <div class="container-custom">
+                <div class="max-w-4xl mx-auto">
+                    
+                    <!-- 病毒传播机制 -->
+                    <div class="bg-apple-gray rounded-xl p-8 mb-8">
+                        <h2 class="text-3xl font-bold mb-6 text-apple-blue">病毒传播机制</h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white rounded-lg p-6">
+                                <h3 class="text-xl font-semibold mb-4">🦠 传播途径</h3>
+                                <ul class="space-y-3 text-sm">
+                                    <li><strong>飞沫传播：</strong>感染者咳嗽、打喷嚏时产生的飞沫</li>
+                                    <li><strong>接触传播：</strong>接触被污染的物体表面</li>
+                                    <li><strong>气溶胶传播：</strong>密闭空间内的微小颗粒</li>
+                                    <li><strong>粪口传播：</strong>通过消化道感染</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-6">
+                                <h3 class="text-xl font-semibold mb-4">📊 传播参数</h3>
+                                <ul class="space-y-3 text-sm">
+                                    <li><strong>基本再生数(R₀)：</strong>一个感染者平均传染的人数</li>
+                                    <li><strong>潜伏期：</strong>感染到出现症状的时间</li>
+                                    <li><strong>传染期：</strong>具有传染性的时间段</li>
+                                    <li><strong>病死率：</strong>感染者中死亡的比例</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 疫苗知识 -->
+                    <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                        <h2 class="text-3xl font-bold mb-6">疫苗防护原理</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-3">💉 疫苗类型</h3>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold mb-2">灭活疫苗</h4>
+                                        <p class="text-sm text-apple-darkgray">使用被杀死的病毒制成，安全性高但免疫效果相对较弱</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">mRNA疫苗</h4>
+                                        <p class="text-sm text-apple-darkgray">指导细胞产生病毒蛋白，激发免疫反应，效果显著</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">载体疫苗</h4>
+                                        <p class="text-sm text-apple-darkgray">使用改造的病毒载体携带目标基因，免疫效果良好</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">重组蛋白疫苗</h4>
+                                        <p class="text-sm text-apple-darkgray">直接使用病毒蛋白片段，副作用小但需要佐剂</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-blue-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-3">🛡️ 群体免疫</h3>
+                                <p class="mb-3">当人群中有足够比例的人获得免疫力时，疾病传播会被有效阻断，保护整个社区。</p>
+                                <ul class="list-disc list-inside space-y-1 text-sm text-apple-darkgray">
+                                    <li>群体免疫阈值通常为60-90%，取决于病毒传染性</li>
+                                    <li>疫苗接种是实现群体免疫的安全途径</li>
+                                    <li>保护无法接种疫苗的脆弱人群</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 公共卫生措施 -->
+                    <div class="bg-apple-gray rounded-xl p-8 mb-8">
+                        <h2 class="text-3xl font-bold mb-6">公共卫生防控措施</h2>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-lg p-6">
+                                <h3 class="text-lg font-semibold mb-3 text-red-600">🚫 非药物干预</h3>
+                                <ul class="text-sm space-y-2">
+                                    <li>• 佩戴口罩</li>
+                                    <li>• 保持社交距离</li>
+                                    <li>• 勤洗手消毒</li>
+                                    <li>• 避免聚集活动</li>
+                                    <li>• 居家隔离</li>
+                                    <li>• 旅行限制</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-6">
+                                <h3 class="text-lg font-semibold mb-3 text-blue-600">🏥 医疗系统准备</h3>
+                                <ul class="text-sm space-y-2">
+                                    <li>• 增加医院床位</li>
+                                    <li>• 储备医疗设备</li>
+                                    <li>• 培训医护人员</li>
+                                    <li>• 建立检测能力</li>
+                                    <li>• 完善转诊体系</li>
+                                    <li>• 心理健康支持</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-6">
+                                <h3 class="text-lg font-semibold mb-3 text-green-600">📊 监测与追踪</h3>
+                                <ul class="text-sm space-y-2">
+                                    <li>• 疫情监测网络</li>
+                                    <li>• 接触者追踪</li>
+                                    <li>• 基因测序分析</li>
+                                    <li>• 数据收集分析</li>
+                                    <li>• 预警系统建设</li>
+                                    <li>• 国际信息共享</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 个人防护 -->
+                    <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                        <h2 class="text-3xl font-bold mb-6">个人防护指南</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-700">日常防护措施</h3>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold mb-2">😷 正确佩戴口罩</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 选择合适的口罩类型</li>
+                                            <li>• 确保口罩完全覆盖口鼻</li>
+                                            <li>• 避免触摸口罩外表面</li>
+                                            <li>• 定期更换口罩</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">🧼 手部卫生</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 用肥皂洗手至少20秒</li>
+                                            <li>• 使用含酒精的手消毒剂</li>
+                                            <li>• 避免用手触摸面部</li>
+                                            <li>• 咳嗽打喷嚏时遮挡</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold mb-4 text-green-700">健康生活方式</h3>
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <div>
+                                        <h4 class="font-semibold mb-2">💪 增强免疫力</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 均衡营养饮食</li>
+                                            <li>• 适量运动锻炼</li>
+                                            <li>• 充足睡眠休息</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">🏠 居家环境</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 保持室内通风</li>
+                                            <li>• 定期清洁消毒</li>
+                                            <li>• 减少外出频次</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">🧠 心理健康</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 保持积极心态</li>
+                                            <li>• 关注权威信息</li>
+                                            <li>• 寻求专业帮助</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 疫情历史 -->
+                    <div class="bg-apple-gray rounded-xl p-8">
+                        <h2 class="text-3xl font-bold mb-6">历史上的重大疫情</h2>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-red-100 rounded-full p-2">
+                                        <span class="text-red-600 font-bold">1918</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">西班牙流感大流行</h3>
+                                        <p class="text-sm text-apple-darkgray">H1N1流感病毒导致全球约5000万人死亡，是20世纪最严重的流感大流行。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 rounded-full p-2">
+                                        <span class="text-orange-600 font-bold">2003</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">SARS疫情</h3>
+                                        <p class="text-sm text-apple-darkgray">严重急性呼吸综合征冠状病毒引起的疫情，促进了全球公共卫生体系的改革。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 rounded-full p-2">
+                                        <span class="text-blue-600 font-bold">2020</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">COVID-19大流行</h3>
+                                        <p class="text-sm text-apple-darkgray">新冠病毒引发的全球大流行，推动了疫苗技术和数字健康的快速发展。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-black text-white py-8">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Pandemic Simulator</h2>
+                    <p class="text-sm text-gray-400">Professional pandemic simulation gaming platform providing realistic pandemic response experience.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
+                        <li><a href="strategy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Strategy Guide</a></li>
+                        <li><a href="pandemic-guide.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pandemic Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Pandemic Simulator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
