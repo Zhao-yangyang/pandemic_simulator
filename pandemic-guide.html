@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,7 @@
     <!-- Google AdSense Meta Tag -->
     <meta name="google-adsense-account" content="ca-pub-8591816850976205">
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVXERHFJ5B"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JVXERHFJ5B');
-    </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8591816850976205"
-     crossorigin="anonymous"></script>
+    <!-- Analytics/Ads scripts are consent-gated via consent.js -->
     
     <title>Pandemic Prevention Guide - Understanding Disease Control & Protection</title>
     <meta name="description" content="Comprehensive guide to pandemic prevention and control. Learn about virus transmission, vaccine principles, public health measures, and personal protection strategies.">
@@ -30,6 +19,7 @@
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="consent.js" defer></script>
     
     <script>
         tailwind.config = {
@@ -110,6 +100,9 @@
         <section class="py-12 bg-white">
             <div class="container-custom">
                 <div class="max-w-4xl mx-auto">
+                    <div class="mb-6 text-xs md:text-sm text-apple-darkgray bg-apple-gray rounded-md p-4">
+                        <strong>Disclaimer:</strong> The information on this page is intended for educational purposes related to the game and general public health awareness. It does not constitute medical advice. Please consult qualified professionals for medical guidance.
+                    </div>
                     
                     <!-- Virus Transmission Mechanisms -->
                     <div class="bg-apple-gray rounded-xl p-8 mb-8">
@@ -151,7 +144,7 @@
                                         <p class="text-sm text-apple-darkgray">Made from killed viruses, high safety but relatively weaker immune response</p>
                                     </div>
                                     <div>
-                              Online           <h4 class="font-semibold mb-2">mRNA Vaccines</h4>
+                                        <h4 class="font-semibold mb-2">mRNA Vaccines</h4>
                                         <p class="text-sm text-apple-darkgray">Instruct cells to produce viral proteins, triggering immune response with significant effectiveness</p>
                                     </div>
                                     <div>
