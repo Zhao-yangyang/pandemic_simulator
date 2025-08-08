@@ -1,64 +1,60 @@
-# Pandemic Simulator 网站
+# Pandemic Simulator Website
 
-这是为 [Pandemic Simulator](https://www.pandemicsimulator.online/) 在线游戏设计的响应式网站。该网站使用现代化的HTML5、Tailwind CSS和原生JavaScript开发，确保在PC和移动设备上都能获得良好的用户体验。
+This is a responsive website for the online game [Pandemic Simulator](https://www.pandemicsimulator.online/). It uses modern HTML5, Tailwind CSS, and vanilla JavaScript to deliver a good experience on both desktop and mobile devices.
 
-## 网站特点
+## Features
 
-- 响应式设计，适配PC和移动设备
-- 苹果风格的设计语言和配色方案
-- 优化的SEO结构，包含规范标签和元标签
-- 平滑的滚动效果和交互体验
-- 高性能的加载速度和用户体验
+- Responsive layout for desktop and mobile
+- Clean, Apple-inspired design language
+- SEO-friendly structure with canonical and meta tags
+- Smooth scrolling and subtle interactions
+- Good loading performance and UX
 
-## 文件结构
+## File Structure
 
-- `index.html` - 主HTML文件
-- `styles.css` - 补充CSS样式文件
-- `README.md` - 本文档
+- `index.html` - main HTML file
+- `styles.css` - supplemental CSS styles
+- `README.md` - this document
 
-## 安装和部署
+## Deployment
 
-1. 下载所有文件到您的服务器
-2. 确保文件保持原有的组织结构
-3. 将文件上传到您的网络主机
-4. 确保域名 `pandemicsimulator.online` 已正确设置并指向您的主机
+1. Download all files to your server
+2. Keep the original structure intact
+3. Upload files to your hosting provider
+4. Ensure domain `pandemicsimulator.online` is correctly configured
 
-## 技术栈
+## Tech Stack
 
 - HTML5
 - CSS3
-- Tailwind CSS (通过CDN加载)
-- 原生JavaScript
+- Tailwind CSS (via CDN)
+- Vanilla JavaScript
 
-## SEO优化
+## SEO
 
-网站已包含以下SEO优化:
+Includes:
 
-- 语义化HTML结构
-- 标题标签合理使用 (H1, H2等)
-- 包含meta描述和关键词
-- Open Graph标签，优化社交媒体分享
-- Canonical URL设置
-- 响应式设计，适配移动设备
+- Semantic HTML structure
+- Proper use of headings (H1, H2, etc.)
+- Meta descriptions and keywords
+- Open Graph tags for social sharing
+- Canonical URL
+- Responsive design for mobile devices
 
-## 自定义修改
+## Customization
 
-如需修改网站内容:
+To change content:
 
-1. 使用任何文本编辑器打开 `index.html`
-2. 修改内容文本或结构
-3. 保存更改并上传到服务器
+1. Open `index.html` with any text editor
+2. Modify text or structure
+3. Save and upload
 
-如需修改样式:
+To change styles:
 
-1. 打开 `styles.css` 文件
-2. 添加或修改CSS样式
-3. 对于Tailwind配置的修改，请在HTML文件的头部script标签中进行
-
-## 联系方式
-
-如有任何问题或需要支持，请联系网站管理员。
+1. Open `styles.css`
+2. Add or modify CSS rules
+3. For Tailwind tweaks, edit the script block in the HTML head
 
 ---
 
-© 2025 Pandemic Simulator. 保留所有权利。 
+© 2025 Pandemic Simulator. All rights reserved.

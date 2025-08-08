@@ -29,7 +29,7 @@
     var banner = document.createElement('div');
     banner.id = 'consent-banner';
     banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#0b1220;color:#fff;padding:12px 16px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,.2);font-size:14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;';
-    banner.innerHTML = '<div style="flex:1;min-width:240px;line-height:1.4;">We use cookies or similar technologies for analytics and ads. You can accept or decline. See <a href="privacy.html" style="color:#61dafb;text-decoration:underline;">Privacy Policy</a>.<br><span style="opacity:.8;">我们使用 Cookie 或同类技术用于分析与广告展示，您可以同意或拒绝，详见隐私政策。</span></div>';
+    banner.innerHTML = '<div style="flex:1;min-width:240px;line-height:1.4;">We use cookies or similar technologies for analytics and ads. You can accept or decline. See <a href="privacy.html" style="color:#61dafb;text-decoration:underline;">Privacy Policy</a>.</div>';
     var actions = document.createElement('div');
     actions.style.cssText = 'display:flex;gap:8px;margin-left:auto;';
 

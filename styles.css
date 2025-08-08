@@ -1,6 +1,6 @@
-/* 补充样式，用于处理iframe和其他自定义元素 */
+/* Supplemental styles for iframe and custom elements */
 
-/* 自定义滚动条 */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -19,7 +19,7 @@
   background-color: #0071e3;
 }
 
-/* 游戏容器增强样式 */
+/* Game container hover effect */
 .game-container {
   transition: all 0.3s ease;
 }
@@ -29,13 +29,13 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* 自定义焦点样式 */
+/* Custom focus style */
 a:focus, button:focus {
   outline: 2px solid #0071e3;
   outline-offset: 2px;
 }
 
-/* 提高移动端可访问性 */
+/* Improve mobile accessibility */
 @media (max-width: 768px) {
   button, a {
     min-height: 44px;
@@ -56,13 +56,13 @@ a:focus, button:focus {
   }
 }
 
-/* 图片响应式处理 */
+/* Responsive images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* 动画效果 */
+/* Button shine animation */
 .btn-primary {
   position: relative;
   overflow: hidden;
@@ -84,19 +84,19 @@ img {
   transform: translateX(0);
 }
 
-/* 确保iframe正确显示 */
+/* Ensure iframe display */
 iframe {
   display: block;
   border: none;
   overflow: hidden;
 }
 
-/* 增强阅读体验 */
+/* Improve reading experience */
 p, li {
   line-height: 1.6;
 }
 
-/* 打印样式 */
+/* Print styles */
 @media print {
   .game-container, nav, footer {
     display: none;
@@ -114,7 +114,7 @@ p, li {
   }
 }
 
-/* 动态加载指示器 */
+/* Loading spinner */
 .loading {
   display: inline-block;
   width: 50px;
