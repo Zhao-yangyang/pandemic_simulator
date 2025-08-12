@@ -13,12 +13,24 @@
     <meta name="description" content="Master advanced strategies for Pandemic Simulator. Learn effective disease control, resource management, vaccine development, and containment policies to become a pandemic response expert.">
     <meta name="keywords" content="pandemic simulator strategy, game tactics, disease control, medical resource management, vaccine development, quarantine policies">
     <link rel="canonical" href="https://pandemicsimulator.online/strategy.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.jpg" type="image/x-icon">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Strategy Guide - Pandemic Simulator">
+    <meta property="og:description" content="Advanced tactics for disease control, resource allocation, and vaccine strategy in Pandemic Simulator.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://pandemicsimulator.online/strategy.html">
+    <meta property="og:image" content="https://pandemicsimulator.online/favicon.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Strategy Guide - Pandemic Simulator">
+    <meta name="twitter:description" content="Advanced tactics for disease control and vaccine strategy.">
+    <meta name="twitter:image" content="https://pandemicsimulator.online/favicon.jpg">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -78,6 +90,29 @@
             background-color: #0077ED;
         }
     </style>
+    
+    <!-- Structured Data: Breadcrumb + Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pandemicsimulator.online"},
+        {"@type": "ListItem", "position": 2, "name": "Strategy Guide", "item": "https://pandemicsimulator.online/strategy.html"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Pandemic Simulator Strategy Guide",
+      "description": "Advanced strategies for disease control, resource management, and vaccine development in Pandemic Simulator.",
+      "author": {"@type": "Organization", "name": "Pandemic Simulator"},
+      "publisher": {"@type": "Organization", "name": "Pandemic Simulator"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pandemicsimulator.online/strategy.html"}
+    }
+    </script>
 </head>
 <body class="bg-apple-gray text-apple-black">
     <header class="bg-white shadow-sm py-4">
@@ -87,6 +122,11 @@
                 <nav class="hidden md:block">
                     <ul class="flex space-x-6">
                         <li><a href="index.html" class="hover:text-apple-blue transition-colors duration-300">Home</a></li>
+                        <li><a href="index.html#features" class="hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                        <li><a href="index.html#how-it-works" class="hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="index.html#pricing" class="hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                        <li><a href="index.html#faq" class="hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
                         <li><a href="strategy.html" class="text-apple-blue font-semibold">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
                         <li><a href="about-us.html" class="hover:text-apple-blue transition-colors duration-300">About Us</a></li>
@@ -97,6 +137,19 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
+            </div>
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <ul class="space-y-4">
+                    <li><a href="index.html#features" class="block hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                    <li><a href="index.html#how-it-works" class="block hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                    <li><a href="index.html#testimonials" class="block hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                    <li><a href="index.html#pricing" class="block hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                    <li><a href="index.html#faq" class="block hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
+                    <li><a href="index.html#play" class="block hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
+                    <li><a href="strategy.html" class="block hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
+                    <li><a href="pandemic-guide.html" class="block hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
+                    <li><a href="about-us.html" class="block hover:text-apple-blue transition-colors duration-300">About Us</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -278,9 +331,15 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="index.html#how-it-works" class="text-gray-400 hover:text-white transition-colors duration-300">How It Works</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+                        <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="index.html#play" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
                         <li><a href="strategy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pandemic Guide</a></li>
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
                     </ul>
                 </div>
                 <div>

@@ -20,13 +20,13 @@
     <meta property="og:description" content="Take control of global health policies to manage a global pandemic in this realistic simulation game. Balance healthcare resources and containment measures.">
     <meta property="og:url" content="https://pandemicsimulator.online">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://pandemicsimulator.online/pandemic-simulator-og-image.jpg">
+    <meta property="og:image" content="https://pandemicsimulator.online/favicon.jpg">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pandemic Simulator - Strategic Health Crisis Management Game">
     <meta name="twitter:description" content="Manage a global pandemic in this realistic simulation game. Develop vaccines, implement quarantines, and improve outcomes.">
-    <meta name="twitter:image" content="https://pandemicsimulator.online/pandemic-simulator-og-image.jpg">
+    <meta name="twitter:image" content="https://pandemicsimulator.online/favicon.jpg">
     
     <!-- Favicon -->
     <link rel="icon" href="favicon.jpg" type="image/x-icon">
@@ -142,6 +142,75 @@
             }
         }
     </style>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Organization & WebSite Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Pandemic Simulator",
+      "url": "https://pandemicsimulator.online",
+      "logo": "https://pandemicsimulator.online/favicon.jpg"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pandemic Simulator",
+      "url": "https://pandemicsimulator.online"
+    }
+    </script>
+    <!-- FAQ Structured Data (matches on-page FAQ content) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Pandemic Simulator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a browser-based strategy simulation where you manage public health policies to control a pandemic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it free to play on pandemicsimulator.online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The game is free to play on our official website with no registration required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to download or install anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The simulation runs directly in modern browsers on desktop and mobile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this medical advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The content is for educational and entertainment purposes only. Please consult professionals for medical guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I learn strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit our Strategy Guide and Pandemic Guide pages for tips and learning resources."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-apple-gray text-apple-black">
     <header class="bg-white shadow-sm py-4">
@@ -150,6 +219,11 @@
                 <a href="index.html" class="text-2xl font-bold text-apple-blue">Pandemic Simulator</a>
                 <nav class="hidden md:block">
                     <ul class="flex space-x-6">
+                        <li><a href="#features" class="hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                        <li><a href="#how-it-works" class="hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                        <li><a href="#testimonials" class="hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#pricing" class="hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#faq" class="hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
                         <li><a href="#play" class="hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
                         <li><a href="strategy.html" class="hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
@@ -164,6 +238,11 @@
             </div>
             <div class="md:hidden hidden mt-4" id="mobile-menu">
                 <ul class="space-y-4">
+                    <li><a href="#features" class="block hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                    <li><a href="#how-it-works" class="block hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                    <li><a href="#testimonials" class="block hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                    <li><a href="#pricing" class="block hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                    <li><a href="#faq" class="block hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
                     <li><a href="#play" class="block hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
                     <li><a href="strategy.html" class="block hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
                     <li><a href="pandemic-guide.html" class="block hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
@@ -184,6 +263,84 @@
                         <strong>Disclaimer:</strong> This website and game are for educational and entertainment purposes only and do not constitute medical advice.
                     </div>
                     <a href="#play" class="btn-primary">Play Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section id="features" class="py-12 bg-white">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">Game Features</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">Realistic Epidemiology</h3>
+                        <p class="text-apple-darkgray text-sm">Simulates disease spread using parameters like R₀, incubation, infectious period, and mitigation effects.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">Strategy & Resource Management</h3>
+                        <p class="text-apple-darkgray text-sm">Balance vaccines, testing, hospital capacity, and public health policies across regions.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">Educational Insights</h3>
+                        <p class="text-apple-darkgray text-sm">Learn how interventions impact transmission dynamics and outcomes in real time.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">Multiple Scenarios</h3>
+                        <p class="text-apple-darkgray text-sm">Tackle escalating difficulty levels and scenario-based challenges.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">No Download Required</h3>
+                        <p class="text-apple-darkgray text-sm">Play instantly on the web at pandemicsimulator.online — desktop and mobile supported.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-2">Free to Play</h3>
+                        <p class="text-apple-darkgray text-sm">Enjoy the full experience without registration or paywalls.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-12 bg-apple-gray">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">How It Works</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-2">1. Launch the Game</h3>
+                        <p class="text-apple-darkgray text-sm">Click Play to load the simulation in your browser — no install required.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-2">2. Set Policies & Allocate</h3>
+                        <p class="text-apple-darkgray text-sm">Adjust interventions, allocate resources, and monitor regional stats.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-2">3. Optimize Outcomes</h3>
+                        <p class="text-apple-darkgray text-sm">Iterate strategies, reduce transmission, and stabilize healthcare systems.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="#play" class="btn-primary">Start Playing</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-12 bg-white">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">What Players Say</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <p class="text-sm">“Surprisingly deep and educational. It made me appreciate the complexity of real-world public health decisions.”</p>
+                        <p class="mt-3 text-xs text-apple-darkgray">— Alex, Strategy Gamer</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <p class="text-sm">“Runs smoothly in the browser and teaches key epidemiology concepts while staying fun.”</p>
+                        <p class="mt-3 text-xs text-apple-darkgray">— Jamie, Educator</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <p class="text-sm">“Perfect balance of challenge and clarity. The policy levers feel meaningful.”</p>
+                        <p class="mt-3 text-xs text-apple-darkgray">— Casey, Simulation Fan</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -271,6 +428,63 @@
                 </div>
             </div>
         </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-12 bg-apple-gray">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">Pricing</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold mb-2">Free</h3>
+                        <p class="text-apple-darkgray text-sm mb-4">Best for players and learners</p>
+                        <ul class="text-sm space-y-2 mb-6">
+                            <li>• Full game access on web</li>
+                            <li>• No download, no signup</li>
+                            <li>• Cross-device support</li>
+                        </ul>
+                        <a class="btn-primary" href="#play" aria-label="Play for free">Play for Free</a>
+                    </div>
+                    <div class="bg-white rounded-xl p-8 opacity-70 border border-gray-100">
+                        <h3 class="text-xl font-semibold mb-2">Educator Resources</h3>
+                        <p class="text-apple-darkgray text-sm mb-4">Coming soon</p>
+                        <ul class="text-sm space-y-2">
+                            <li>• Classroom guides</li>
+                            <li>• Lesson integrations</li>
+                            <li>• Assessment ideas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-12 bg-white">
+            <div class="container-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-lg font-semibold">What is Pandemic Simulator?</h3>
+                        <p class="text-sm text-apple-darkgray mt-2">It is a browser-based strategy simulation where you manage public health policies to control a pandemic.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-lg font-semibold">Is it free to play on pandemicsimulator.online?</h3>
+                        <p class="text-sm text-apple-darkgray mt-2">Yes. The game is free to play on our official website with no registration required.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-lg font-semibold">Do I need to download or install anything?</h3>
+                        <p class="text-sm text-apple-darkgray mt-2">No. The simulation runs directly in modern browsers on desktop and mobile.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-lg font-semibold">Is this medical advice?</h3>
+                        <p class="text-sm text-apple-darkgray mt-2">No. The content is for educational and entertainment purposes only. Please consult professionals for medical guidance.</p>
+                    </div>
+                    <div class="bg-apple-gray rounded-xl p-6">
+                        <h3 class="text-lg font-semibold">Where can I learn strategies?</h3>
+                        <p class="text-sm text-apple-darkgray mt-2">Visit our <a class="text-apple-blue hover:underline" href="strategy.html">Strategy Guide</a> and <a class="text-apple-blue hover:underline" href="pandemic-guide.html">Pandemic Guide</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-apple-black text-white py-8">
@@ -283,6 +497,11 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition-colors duration-300">How It Works</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                         <li><a href="#play" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
                         <li><a href="strategy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pandemic Guide</a></li>
@@ -350,6 +569,8 @@
                 }
             });
         });
+
+        // FAQ structured data 已在 <head> 中以 JSON-LD 静态方式注入，避免重复注入
 
         // Remove code that would cause cross-origin errors
         const toggleSourceBtn = document.getElementById('toggle-source-btn');

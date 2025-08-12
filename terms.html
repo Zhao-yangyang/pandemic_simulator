@@ -9,6 +9,18 @@
     <meta name="description" content="Read Pandemic Simulator's terms of service to understand the rules and conditions for using our website and gaming services.">
     <link rel="canonical" href="https://pandemicsimulator.online/terms.html">
     <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Terms of Service - Pandemic Simulator">
+    <meta property="og:description" content="Rules and conditions for using pandemicsimulator.online and its gaming services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pandemicsimulator.online/terms.html">
+    <meta property="og:image" content="https://pandemicsimulator.online/favicon.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terms of Service - Pandemic Simulator">
+    <meta name="twitter:description" content="Read our terms governing website and game usage.">
+    <meta name="twitter:image" content="https://pandemicsimulator.online/favicon.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="consent.js" defer></script>
     <script>
@@ -49,6 +61,27 @@
             }
         }
     </style>
+    
+    <!-- Structured Data: Breadcrumb + WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pandemicsimulator.online"},
+        {"@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://pandemicsimulator.online/terms.html"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service - Pandemic Simulator",
+      "url": "https://pandemicsimulator.online/terms.html",
+      "description": "Terms governing the use of the Pandemic Simulator website and services."
+    }
+    </script>
 </head>
 <body class="bg-apple-gray text-apple-black">
     <header class="bg-white shadow-sm py-4">
@@ -58,11 +91,34 @@
                 <nav class="hidden md:block">
                     <ul class="flex space-x-6">
                         <li><a href="index.html" class="hover:text-apple-blue transition-colors duration-300">Home</a></li>
+                        <li><a href="index.html#features" class="hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                        <li><a href="index.html#how-it-works" class="hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="index.html#pricing" class="hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                        <li><a href="index.html#faq" class="hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
                         <li><a href="strategy.html" class="hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
                         <li><a href="about-us.html" class="hover:text-apple-blue transition-colors duration-300">About Us</a></li>
                     </ul>
                 </nav>
+                <button class="md:hidden text-apple-blue" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <ul class="space-y-4">
+                    <li><a href="index.html#features" class="block hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                    <li><a href="index.html#how-it-works" class="block hover:text-apple-blue transition-colors duration-300">How It Works</a></li>
+                    <li><a href="index.html#testimonials" class="block hover:text-apple-blue transition-colors duration-300">Testimonials</a></li>
+                    <li><a href="index.html#pricing" class="block hover:text-apple-blue transition-colors duration-300">Pricing</a></li>
+                    <li><a href="index.html#faq" class="block hover:text-apple-blue transition-colors duration-300">FAQ</a></li>
+                    <li><a href="index.html#play" class="block hover:text-apple-blue transition-colors duration-300">Play Now</a></li>
+                    <li><a href="strategy.html" class="block hover:text-apple-blue transition-colors duration-300">Strategy Guide</a></li>
+                    <li><a href="pandemic-guide.html" class="block hover:text-apple-blue transition-colors duration-300">Pandemic Guide</a></li>
+                    <li><a href="about-us.html" class="block hover:text-apple-blue transition-colors duration-300">About Us</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -203,9 +259,15 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="index.html#how-it-works" class="text-gray-400 hover:text-white transition-colors duration-300">How It Works</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+                        <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="index.html#play" class="text-gray-400 hover:text-white transition-colors duration-300">Play Game</a></li>
                         <li><a href="strategy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Strategy Guide</a></li>
                         <li><a href="pandemic-guide.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pandemic Guide</a></li>
+                        <li><a href="about-us.html" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
                     </ul>
                 </div>
                 <div>
@@ -222,5 +284,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
