@@ -2,38 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://pandemicsimulator.online/</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-14</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://pandemicsimulator.online/strategy.html</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://pandemicsimulator.online/pandemic-guide.html</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://pandemicsimulator.online/about-us.html</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://pandemicsimulator.online/privacy.html</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>https://pandemicsimulator.online/terms.html</loc>
-        <lastmod>2025-08-12</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.4</priority>
     </url>
 </urlset>
